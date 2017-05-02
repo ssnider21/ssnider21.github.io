@@ -26,11 +26,31 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <p class="text-center copy-par">You unroll the message, and read:</p>
-                    <p class="text-center copy-par"><em>I am Khan of the lands of the rising sun while you are sultan of those of the setting sun. Let us conclude a firm agreement of friendship and peace</em></p>
+                    <p class="text-center copy-par" onclick="$('#myModal').modal()"><em>I am Khan of the lands of the rising sun while you are sultan of those of the setting sun. Let us conclude a firm agreement of friendship and peace.</em></p>
                     <p class="text-center copy-par">Do you want to establish a trade agreement with Genghis Khan?</p>
                     <p class="text-center copy-par"><a href="easytrade.html">Yes</a></p>
                     <p class="text-center copy-par"><a href="easynotrade.html">No</a></p>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal-center" id="myModal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="modal-title text-center">More Info</h3>
+                </div>
+                <div class="modal-body">
+                  <p>According to Genghis Khan: A Biography by Zofia Stone, "It was not originally the intention of the Mongol Empire to invade the Khwarezmid Empire. According to the Persian historian Juzjani, Genghis Khan had originally sent the ruler of the Khwarezmid Empire, Ala ad-Din Muhammad, a message seeking trade and greeted him as his neighbor: 'I am master of the lands of the rising sun while you rule those of the setting sun. Let us conclude a firm treaty of friendship and peace.'' or he said "I am Khan of the lands of the rising sun while you are sultan of those of the setting sun: Let us conclude a firm agreement of friendship and peace'"</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
             </div>
         </div>
 
