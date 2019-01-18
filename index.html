@@ -57,7 +57,7 @@
           }
 
           handleFileUploadSubmit(e) {
-          const uploadTask = storageRef.child(`images/${selectedFile.name}`).put(selectedFile); //create a child directory called images, and place the file inside this directory
+          const uploadTask = storageRef.child(`${selectedFile.name}`).put(selectedFile); //create a child directory called images, and place the file inside this directory
           uploadTask.on('state_changed', (snapshot) => {
           // Observe state change events such as progress, pause, and resume
           }, (error) => {
