@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>Dynasty Smoke</title>
+    <style>
+      body {
+        margin: 1px auto;
+        white-space: pre-wrap;
+        font-family: Courier, monospace;
+        max-width: 390px;
+        font-size: 13px;
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --dark-gold: #bfa100;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+        --yellow:#ffe119;
+        --orange: #f58231;
+        --purple: #911eb4;
+        --magenta: #f032e6;
+        --teal: #008080;
+        --cyan: #00ffff;
+
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --bg: #101010;
+          --fg: white;
+          --red: #ff5050;
+          --blue: #9090ff;
+          --green: #50da50;
+          --gray: gray;
+          --brown: #745c5f;
+          --odd-row: #202020;
+
+        }
+      }
+
+      body.light {
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+
+      }
+
+      body.dark {
+        --bg: #101010;
+        --fg: white;
+        --red: #ff5050;
+        --blue: #9090ff;
+        --green: #50da50;
+        --gray: gray;
+        --brown: #745c5f;
+        --odd-row: #202020;
+
+      }
+
+      /* Subset of Tailwind styles */
+.container { width: 100%; }
+
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+.inline-block { display: inline-block; }
+
+.sticky { position: sticky; }
+.-top-0 { top: 0px; }
+
+.flex-1 { flex: 1 1 0px; }
+.flex-initial { flex: 0 1 initial; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-none { flex: none; }
+.flex-grow { flex-grow: 1; }
+.flex-pr { flex: 0 0 100%; }
+.justify-between { justify-content: space-between; }
+.justify-evenly { justify-content: space-evenly; }
+.justify-center { justify-content: center; }
+.justify-items-center { justify-items: center; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.full-width { width: 100%; }
+.self-start { align-self: start; }
+.self-center { align-self: center; }
+
+.matchup-div { width: 235px; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+.italic { font-style: italic; }
+.font-bold { font-weight: bold; }
+.no-underline { text-decoration: none; }
+
+.text-fg { color: var(--fg); }
+.text-red { color: var(--red); }
+.text-blue { color: var(--blue); }
+.text-green { color: var(--green); }
+.text-gray { color: var(--gray); }
+.text-dark-gold { color: var(--dark-gold); }
+.text-brown { color: var(--brown); }
+.text-yellow { color: var(--yellow); }
+.text-orange { color: var(--orange); }
+.text-purple { color: var(--purple); }
+.text-magenta { color: var(--magenta); }
+.text-teal { color: var(--teal); }
+.text-cyan { color: var(--cyan); }
+
+.text-away { color: var(--away-color); }
+.text-home { color: var(--home-color); }
+
+.bg-bg { background-color: var(--bg); }
+.bg-odd { background-color: var(--odd-row); }
+
+.cursor-pointer { cursor: pointer; }
+
+/* Teeny-tiny component-like styles */
+.nav {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+      label.toggle-on, label.toggle-off { cursor: pointer; }
+      input[type="checkbox"] { display: none; }
+      input[type="checkbox"]:checked ~ .toggle-on { display: none; }
+      input[type="checkbox"]:not(:checked) ~ .toggle-off { display: none; }
+      .toggle-on, .toggle-off {
+        color: var(--blue);
+      }
+
+      .champion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .text-cc { color: #B66941 }
+
+    </style>
+</head>
+<body><div class="flex justify-between"><span><a class="nav" href="https://sleeper.com/leagues/1130598394172502016">sleeper.com</a></span><div><input id="dark-mode" class="dark-mode" type="checkbox" /><label class="toggle-on" for="dark-mode"> Dark Mode</label><label class="toggle-off" for="dark-mode">Light Mode</label></div></div>
+    <div class="flex flex-wrap justify-evenly">
+        <h2>Current Matchups</h2>
+        <div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span><span>0.0</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span><span>0.0</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span><span>0.0</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span><span>0.0</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span><span>0.0</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span><span>0.0</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span><span>0.0</span></div><div>------------------------------</div>
+    </div>
+    <div class="flex flex-wrap justify-evenly">
+        <h2>Power Rankings</h2>
+        <div class='flex flex-wrap justify-evenly full-width'><ol><li><span class='text-red'>MattyFBabyy</span>: 1.43</li><li><span class='text-blue'>RipRapRoad</span>: 1.57</li><li><span class='text-green'>rbaird203</span>: 2.43</li><li><span class='text-gray'>sethmanilove</span>: 2.86</li><li><span class='text-dark-gold'>rdanbergbiggs</span>: 3.29</li><li><span class='text-brown'>ssnider21</span>: 4.14</li><li><span class='text-yellow'>ChrisTurnbull15</span>: 4.57</li><li><span class='text-orange'>calvinchapp</span>: 7.14</li><li><span class='text-purple'>jimmybromley</span>: 8.43</li><li><span class='text-magenta'>pbromley</span>: 8.86</li><li><span class='text-teal'>zachoelsner</span>: 9.29</li><li><span class='text-cyan'>Dynasty Startup League 16</span>: 9.71</li></ol></div>
+        <div>┤
+┤<span class='text-cyan'>─</span><span class='text-cyan'>─</span>
+┤<span class='text-teal'>─</span><span class='text-teal'>─</span>
+┤<span class='text-magenta'>─</span><span class='text-magenta'>─</span>
+┤
+┤<span class='text-purple'>─</span><span class='text-purple'>─</span>
+┤
+┤
+┤
+┤<span class='text-orange'>─</span><span class='text-orange'>─</span>
+┤
+┤
+┤
+┤
+┤
+┤
+┤<span class='text-yellow'>─</span><span class='text-yellow'>─</span>
+┤
+┤<span class='text-brown'>─</span><span class='text-brown'>─</span>
+┤
+┤<span class='text-dark-gold'>─</span><span class='text-dark-gold'>─</span>
+┤<span class='text-gray'>─</span><span class='text-gray'>─</span>
+┤
+┤<span class='text-green'>─</span><span class='text-green'>─</span>
+┤
+┤<span class='text-blue'>─</span><span class='text-blue'>─</span>
+┼<span class='text-red'>─</span><span class='text-red'>─</span></div>
+    </div>
+    <div class="flex flex-wrap justify-evenly">
+        <h2>Playoff Odds</h2>
+        <ol><li>RipRapRoad: 69.71%</li><li>MattyFBabyy: 68.6%</li><li>rbaird203: 67.75%</li><li>sethmanilove: 65.48%</li><li>rdanbergbiggs: 64.35%</li><li>ChrisTurnbull15: 56.52%</li><li>calvinchapp: 40.96%</li><li>ssnider21: 37.86%</li><li>jimmybromley: 34.76%</li><li>pbromley: 32.52%</li><li>zachoelsner: 31.81%</li><li>Dynasty Startup League 16: 29.68%</li></ol>
+    </div>
+    <div class="flex flex-wrap justify-evenly">
+        <h2>Schedule</h2>
+        <h4 class='full-width text-center'>Week 1</h4><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span><span class='text-red'>98.66</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span><span class='text-green'>115.44</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span><span class='text-green'>113.46</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span><span class='text-red'>66.86</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span><span class='text-green'>100.14</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span><span class='text-red'>65.02</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span><span class='text-red'>91.54</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span><span class='text-green'>100.44</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span><span class='text-red'>61.18</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span><span class='text-green'>113.28</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 2</h4><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 3</h4><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 4</h4><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 5</h4><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 6</h4><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 7</h4><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 8</h4><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 9</h4><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 10</h4><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 11</h4><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 12</h4><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div class='matchup-div flex flex-wrap justify-between'><span>rbaird203</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>sethmanilove</span></div><div>------------------------------</div><h4 class='full-width text-center'>Week 13</h4><div class='matchup-div flex flex-wrap justify-between'><span>jimmybromley</span></div><div class='matchup-div flex flex-wrap justify-between'><span>RipRapRoad</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>calvinchapp</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ChrisTurnbull15</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>rdanbergbiggs</span></div><div class='matchup-div flex flex-wrap justify-between'><span>pbromley</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>MattyFBabyy</span></div><div class='matchup-div flex flex-wrap justify-between'><span>zachoelsner</span></div><div>------------------------------</div><div class='matchup-div flex flex-wrap justify-between'><span>Dynasty Startup League 16</span></div><div class='matchup-div flex flex-wrap justify-between'><span>ssnider21</span></div><div>------------------------------</div>
+    </div>
+</body>
+<script type="text/javascript">
+// Dark mode toggle
+let darkModeToggle = document.getElementById("dark-mode")
+let initialScheme = "light"
+if (localStorage.visualMode) {
+  initialScheme = localStorage.visualMode
+  document.body.classList.add(localStorage.visualMode)
+} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  initialScheme = "dark"
+}
+if (initialScheme == "dark") {
+  darkModeToggle.checked = true
+}
+darkModeToggle.oninput = () => {
+  if (darkModeToggle.checked) {
+    document.body.classList.remove("light")
+    document.body.classList.add("dark")
+    localStorage.visualMode = "dark"
+  } else {
+    document.body.classList.remove("dark")
+    document.body.classList.add("light")
+    localStorage.visualMode = "light"
+  }
+}
+</script>
+</html>
