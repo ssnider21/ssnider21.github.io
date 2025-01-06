@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>Sean's Blog</title>
+    <style>
+      body {
+        margin: 1px auto;
+        white-space: pre-wrap;
+        font-family: Courier, monospace;
+        max-width: 390px;
+        font-size: 13px;
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --dark-gold: #bfa100;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+        --yellow:#ffe119;
+        --orange: #f58231;
+        --purple: #911eb4;
+        --magenta: #f032e6;
+        --teal: #008080;
+        --cyan: #00ffff;
+        
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --bg: #101010;
+          --fg: white;
+          --red: #ff5050;
+          --blue: #9090ff;
+          --green: #50da50;
+          --gray: gray;
+          --brown: #745c5f;
+          --odd-row: #202020;
+          
+        }
+      }
+
+      body.light {
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+        
+      }
+
+      body.dark {
+        --bg: #101010;
+        --fg: white;
+        --red: #ff5050;
+        --blue: #9090ff;
+        --green: #50da50;
+        --gray: gray;
+        --brown: #745c5f;
+        --odd-row: #202020;
+        
+      }
+
+      /* Subset of Tailwind styles */
+.container { width: 100%; }
+
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+.inline-block { display: inline-block; }
+
+.sticky { position: sticky; }
+.-top-0 { top: 0px; }
+
+.flex-1 { flex: 1 1 0px; }
+.flex-initial { flex: 0 1 initial; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-none { flex: none; }
+.flex-grow { flex-grow: 1; }
+.flex-pr { flex: 0 0 100%; }
+.justify-between { justify-content: space-between; }
+.justify-evenly { justify-content: space-evenly; }
+.justify-center { justify-content: center; }
+.justify-items-center { justify-items: center; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.full-width { width: 100%; }
+.self-start { align-self: start; }
+.self-center { align-self: center; }
+
+.matchup-div { width: 235px; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+.italic { font-style: italic; }
+.font-bold { font-weight: bold; }
+.no-underline { text-decoration: none; }
+
+.text-fg { color: var(--fg); }
+.text-red { color: var(--red); }
+.text-blue { color: var(--blue); }
+.text-green { color: var(--green); }
+.text-gray { color: var(--gray); }
+.text-dark-gold { color: var(--dark-gold); }
+.text-brown { color: var(--brown); }
+.text-yellow { color: var(--yellow); }
+.text-orange { color: var(--orange); }
+.text-purple { color: var(--purple); }
+.text-magenta { color: var(--magenta); }
+.text-teal { color: var(--teal); }
+.text-cyan { color: var(--cyan); }
+
+.text-away { color: var(--away-color); }
+.text-home { color: var(--home-color); }
+
+.bg-bg { background-color: var(--bg); }
+.bg-odd { background-color: var(--odd-row); }
+
+.cursor-pointer { cursor: pointer; }
+
+/* Teeny-tiny component-like styles */
+.nav {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+      label.toggle-on, label.toggle-off { cursor: pointer; }
+      input[type="checkbox"] { display: none; }
+      input[type="checkbox"]:checked ~ .toggle-on { display: none; }
+      input[type="checkbox"]:not(:checked) ~ .toggle-off { display: none; }
+      .toggle-on, .toggle-off {
+        color: var(--blue);
+      }
+
+      .champion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .text-cc { color: #B66941 }
+
+    </style>
+</head>
+<body>
+    <div class="flex flex-wrap justify-evenly"><h3>01.06.2025</h3></div>
+    <div class="flex flex-wrap">
+        <p>"When are you starting your substack?"</p>
+        
+        <p>"Blog," I always correct, as if that really makes any meaningful difference at all in our current internet landscape. And why even start one when there's infinite content out there already? I've been telling people for months—maybe years—that I'm starting one, but I can never really give an answer as to <i>why</i>, or what it will even be about. But yesterday, on a whim, I answered, "stream of consciousness." And while that's not entirely accurate, it's probably as close as I can get—not in a James Joyce or Jack Kerouac type of way, just whatever sparks an idea and makes me want to create instead of consume.</p>
+        
+        <p>Because that's the thing, isn't it? I wouldn't say I'm terminally online, although I am pretty fucking online. And in all my years on the internet, I've never really been a creator. I scroll, I click, I refresh. I do it all over again. At some point, the sameness of it all becomes too much. It creates a desire to put something out there, something that fulfills an itch that isn't being scratched.</p>
+        
+        <p>So maybe I'll write about fishing in the summer, local politics when something interesting goes down, thoughts on wasting time playing video games, or the tiny dramas of my life that I never bother bringing up in conversation. Maybe it'll be trivia, or a collection of long-form articles from one of the 15 news sites I read every day. Maybe sports. Maybe cooking. Maybe music. Maybe this will peter out after two or three posts. Who knows? But for now, it feels like something worth trying. And maybe that's reason enough.</p>
+    </div>
+    <div class="flex flex-wrap justify-evenly"><h5><a href=../blog.html>All Posts</a></h5></div>
+
+</body>
+</html>
