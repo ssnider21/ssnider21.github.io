@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>Sean's Blog</title>
+    <style>
+      body {
+        margin: 1px auto;
+        white-space: pre-wrap;
+        font-family: Courier, monospace;
+        max-width: 352px;
+        font-size: 13px;
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --dark-gold: #bfa100;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+        --yellow:#ffe119;
+        --orange: #f58231;
+        --purple: #911eb4;
+        --magenta: #f032e6;
+        --teal: #008080;
+        --cyan: #00ffff;
+        
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --bg: #101010;
+          --fg: white;
+          --red: #ff5050;
+          --blue: #9090ff;
+          --green: #50da50;
+          --gray: gray;
+          --brown: #745c5f;
+          --odd-row: #202020;
+          
+        }
+      }
+
+      body.light {
+        --bg: white;
+        --fg: black;
+        --red: red;
+        --blue: blue;
+        --green: green;
+        --gray: gray;
+        --brown: #4a2d30;
+        --odd-row: #f0f0f0;
+        
+      }
+
+      body.dark {
+        --bg: #101010;
+        --fg: white;
+        --red: #ff5050;
+        --blue: #9090ff;
+        --green: #50da50;
+        --gray: gray;
+        --brown: #745c5f;
+        --odd-row: #202020;
+        
+      }
+
+      /* Subset of Tailwind styles */
+.container { width: 100%; }
+
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+.inline-block { display: inline-block; }
+
+.sticky { position: sticky; }
+.-top-0 { top: 0px; }
+
+.flex-1 { flex: 1 1 0px; }
+.flex-initial { flex: 0 1 initial; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-none { flex: none; }
+.flex-grow { flex-grow: 1; }
+.flex-pr { flex: 0 0 100%; }
+.justify-between { justify-content: space-between; }
+.justify-evenly { justify-content: space-evenly; }
+.justify-center { justify-content: center; }
+.justify-items-center { justify-items: center; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.full-width { width: 100%; }
+.self-start { align-self: start; }
+.self-center { align-self: center; }
+
+.matchup-div { width: 235px; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+.italic { font-style: italic; }
+.font-bold { font-weight: bold; }
+.no-underline { text-decoration: none; }
+
+.text-fg { color: var(--fg); }
+.text-red { color: var(--red); }
+.text-blue { color: var(--blue); }
+.text-green { color: var(--green); }
+.text-gray { color: var(--gray); }
+.text-dark-gold { color: var(--dark-gold); }
+.text-brown { color: var(--brown); }
+.text-yellow { color: var(--yellow); }
+.text-orange { color: var(--orange); }
+.text-purple { color: var(--purple); }
+.text-magenta { color: var(--magenta); }
+.text-teal { color: var(--teal); }
+.text-cyan { color: var(--cyan); }
+
+.text-away { color: var(--away-color); }
+.text-home { color: var(--home-color); }
+
+.bg-bg { background-color: var(--bg); }
+.bg-odd { background-color: var(--odd-row); }
+
+.cursor-pointer { cursor: pointer; }
+
+/* Teeny-tiny component-like styles */
+.nav {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+      label.toggle-on, label.toggle-off { cursor: pointer; }
+      input[type="checkbox"] { display: none; }
+      input[type="checkbox"]:checked ~ .toggle-on { display: none; }
+      input[type="checkbox"]:not(:checked) ~ .toggle-off { display: none; }
+      .toggle-on, .toggle-off {
+        color: var(--blue);
+      }
+
+      .champion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .text-cc { color: #B66941 }
+
+    </style>
+</head>
+<body>
+    <div class="flex flex-wrap justify-evenly"><h3>01.15.2025</h3></div>
+    <div class="flex flex-wrap">
+        <p>I love bits. I love bits so much that sometimes I worry I've lost the ability to communicate like a normal person. I’ll find myself doing a bit when I give my standup update, or when I'm talking to my parents, or meeting someone for the first time and they clearly have no idea what I'm talking about.</p>
+        
+        <p>One of the longest running bits I’m a part of is Big Cheese. I don’t remember how exactly it started - just that one of my friends is the type of guy that generally is correct when he says something, and he interrupted another bit to tell us about Big Cheese. How they control all the cheese production in the country, limit our options, refuse to sell cheese in reasonable sizes. That sort of thing. Since he knows what he’s talking about most of the time, we ran with it. Anything that went wrong because of corporate interference, or lack of consumer power, or just annoyance, could be blamed on Big Cheese. For a relatively dumb bit, it’s had a lot of staying power.</p>
+        
+        <p>Big Cheese doesn’t quite exist to that extent, but interestingly enough another rather basic food really is controlled by that sort of cartel, and it’s indicative of a larger problem in modern capitalism. <a href="https://jacobin.com/2025/01/french-fry-price-fixing-antitrust/">According to Jacobin</a>, “just four firms now control at least 97 percent of the $68 billion frozen potato market.” French fries, hash browns, tater tots - all sold by a small cartel. And it is a cartel. The four firms somehow keep rolling out lockstep price increases. Restaurants aren’t able to switch their supply, as there’s no difference in cost. In November, the federal government filed a set of antitrust lawsuits against Big Potato.</p>
+        
+        <p>Companies can’t get together and tell each other “Hey, you all wanna raise prices at the same time? Let’s bag the little guys.” It would be the most open and shut Sherman Antitrust case of all time. What they can do though - at least for the time being - is both share and utilize anonymized, confidential analytics. Four firms feed their data into a potato industry specific analytics platform; four firms consume that data. Even if anonymous, it’s not hard for these companies to forecast trends of what the others are doing.</p>
+
+        <p>Similar practices have borne tubers in other industries. <a href="https://www.washingtonpost.com/business/interactive/2025/realpage-lawsuit-rent-map/">RealPage</a> is a notorious practitioner in the apartment rental landscape. Data from millions of rentals are fed into the platform all so that landlords can receive a suggested price for their units. Renters lose agency and choice. For many, every unit they’re looking at during an apartment has been algorithmically priced by RealPage. Unsurprisingly this leads to sharp increases in asking price. Like Big Potato, Big Landlord is also facing a recently filed antitrust suit.</p>
+
+        <p>At the end of the day, these aren't just theoretical problems. They're real, tangible forces shaping the lives of everyday people. Corporate cartels and their data-driven schemes make basic needs harder to afford and harder to access. What can be done? I have no clue.</p>
+    </div>
+    <div class="flex flex-wrap justify-evenly"><h4><a href=../blog.html>All Posts</a></h4></div>
+
+</body>
+</html>
