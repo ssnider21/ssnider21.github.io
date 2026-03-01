@@ -230,15 +230,14 @@
       }
 
       /* Desktop: 3-column grid */
-      @media (min-width: 960px) {
+      @media (min-width: 1800px) {
         .site-grid {
-          max-width: 1200px;
-          grid-template-columns: 1fr 1fr 1fr;
+          max-width: 1800px;
+          grid-template-columns: minmax(0, 600px) minmax(0, 600px) minmax(0, 600px);
           grid-template-areas:
             "nav      nav      nav"
             "matchups rankings odds"
-            "h2h      h2h      h2h"
-            "records  records  records"
+            "h2h      rankings records"
             "schedule schedule schedule";
         }
       }
